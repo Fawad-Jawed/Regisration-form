@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- first we create Header and Background -->
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="btnLogin-popup" id="btn2">Login</button>
+        </nav>
+    </header>
+    
+
+    <div class="wrapper" id="wapp">
+        <span class="icon-close" id="close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" id="Email" autocomplete="email" required>
+                    <label for="Email">Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" id="Pass" required>
+                    <label for="Pass">Password</label>
+                </div>
+
+                <div class="remember-forget">
+                    <label id="check"><input type="checkbox" id="check">Remember me</label>
+                    <a href="#">Forget Password?</a>
+                </div>
+
+                <button type="submit" class="btn" id="btn1">Login</button>
+
+                <div class="login-register">
+                    <p>Don't have an account? 
+                        <a href="#" id="red">Register</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
