@@ -1,11 +1,36 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome</h1>
+<!-- first we create Header and Background -->
+<header>
+    <h2 class="logo">Logo</h2>
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <button class="btnLogin-popup" id="btn5">Log Out</button>
+    </nav>
+</header>
+    <script>
+        let btn5 = document.getElementById("btn5")
+        btn5.addEventListener("click", function(){
+            alert("You are logged out successfully")
+            window.location.href = "index.html"
+            });
+
+        document.addEventListener("DOMContentLoaded", function() {
+        var isLoggedIn = localStorage.getItem("isLoggedIn");
+        // If not logged in, redirect to the login page
+        if (!isLoggedIn || isLoggedIn !== "true") {
+        window.location.href = "index.html";
+        }
+        });
+    </script>
 </body>
 </html>
