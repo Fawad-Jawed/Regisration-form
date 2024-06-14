@@ -7,6 +7,7 @@ btn3.addEventListener("click",()=>{
     localStorage.setItem("Username", user.value)
     localStorage.setItem("Email", email.value )
     localStorage.setItem("Password", pass.value)
+    localStorage.setItem('isLoggedIn', 'true')
 
     window.location.href = 'index.html'
     user.value= ""
@@ -25,7 +26,4 @@ close.addEventListener("click", () => {
 let btn4 = document.getElementById("btn4");
 btn4.addEventListener("click", () => {
     window.location.href = 'index.html'
-    wrapper.style.visibility = "visible";
-    wrapper.style.transform= "translateX(-10%)";
-    wrapper.style.transition = ".8s"
 });
